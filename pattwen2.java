@@ -1,5 +1,15 @@
 
 //Q10  BUTTERFLY HAED PATTERNS
+// *       *
+// **      **
+// ***    ***
+// ****  ****
+// **********
+// **********
+// ****  ****
+// ***    ***
+// **      **
+// *        *
 
 
 import java.util.*;
@@ -15,7 +25,7 @@ public class patterns2 {
         }
           // spaces
             int spaces =2*(n-i);
-            for (int j = 1; j<= spaces; j++){
+            for (int s = 1; s<= spaces; s++){
                 System.out.print(" ");
             }
             // second part
@@ -33,7 +43,7 @@ public class patterns2 {
             }
               // spaces
                 int spaces = 2 * (n-i);
-                for (int j=1; j<= spaces; j++){
+                for (int s=1; s<= spaces; s++){
                     System.out.print(" ");
                 }
                 // second part
@@ -48,6 +58,11 @@ public class patterns2 {
 
 
 //Q 11 SOLID RHOMBUS HARD PATTERNS
+//     *****
+//    *****
+//   *****
+//  *****
+// *****
 
 
 import java.util.*;
@@ -59,7 +74,7 @@ public class patterns2{
         
     for(int i=1;i<=n; i++){
             //spaces
-           for(int j=1;j<=n-i; j++){
+           for(int s=1;s<=n-i; s++){
             System.out.print(" ");
            }
 
@@ -77,6 +92,11 @@ public class patterns2{
 
   
 //Q 12 NUMBER PYRAMID
+//     1 
+//    2 2
+//   3 3 3
+//  4 4 4 4
+// 5 5 5 5 5
 
 
 import java.util.*;
@@ -87,7 +107,7 @@ public class patterns2{
         int n =5;
         for (int i=1; i<=n; i++){
                // for space
-               for (int j=1; j<=n-i; j++){
+               for (int s=1; s<=n-i; s++){
                 System.out.print(" ");
                }
                // nubers => print row number row number times
@@ -105,6 +125,11 @@ public class patterns2{
 
 
   // Q 13 HOLLO SOLID RHOMBUS HARD PATTERNS
+//     *****
+//    *   *
+//   *   *
+//  *   *
+// *****
 
 
 
@@ -119,7 +144,7 @@ public class patterns2{
         
     for(int i=1;i<=n; i++){
             //spaces
-           for(int j=1;j<=n-i; j++){
+           for(int s=1;s<=n-i; s++){
             System.out.print(" ");
            }
 
@@ -141,6 +166,11 @@ public class patterns2{
 
 
 //Q 14 palindromic pattens 
+//     1
+//    212
+//   32123
+//  4321234
+// 543212345
 
 
 
@@ -171,6 +201,16 @@ public class patterns2 {
 
 
 // Q 15 Dimond pattern
+
+//    *
+//   ***
+//  *****
+// *******
+// *******
+//  *****
+//   ***
+//    *
+
 import java.util.*;
 public class pattwen2{
     public static void main  (String args[]){
