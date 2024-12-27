@@ -244,3 +244,77 @@ public class pattwen2{
 }
 
 
+//Q 16 number pattern 
+
+// 5 5 5 5 5 5 5 5 5 
+// 5 4 4 4 4 4 4 4 5 
+// 5 4 3 3 3 3 3 4 5 
+// 5 4 3 2 2 2 3 4 5 
+// 5 4 3 2 1 2 3 4 5 
+// 5 4 3 2 2 2 3 4 5 
+// 5 4 3 3 3 3 3 4 5 
+// 5 4 4 4 4 4 4 4 5 
+// 5 5 5 5 5 5 5 5 5
+
+
+public class Pattern {
+  public static void main(String[] args) {
+      int n = 14; // size of the pattern
+      int layers = (n + 1) / 2; // number of layers in the pattern
+
+      for (int i = 0; i < n; i++) {
+          for (int j = 0; j < n; j++) {
+              int value = layers - Math.min(Math.min(i, j), Math.min(n - 1 - i, n - 1 - j));
+              System.out.print(value + " ");
+          }
+          System.out.println();
+      }
+  }
+}
+
+
+//Q 17 ractange number pattern
+
+// 6 6 6 6 6 6 6 6 6 6 6 6 6 
+// 6 5 5 5 5 5 5 5 5 5 5 5 6
+// 6 5 4 4 4 4 4 4 4 4 4 5 6
+// 6 5 4 3 3 3 3 3 3 3 4 5 6
+// 6 5 4 3 2 2 2 2 2 3 4 5 6
+// 6 5 4 3 2 1 1 1 2 3 4 5 6
+// 6 5 4 3 2 1 0 1 2 3 4 5 6
+// 6 5 4 3 2 1 1 1 2 3 4 5 6
+// 6 5 4 3 2 2 2 2 2 3 4 5 6
+// 6 5 4 3 3 3 3 3 3 3 4 5 6
+// 6 5 4 4 4 4 4 4 4 4 4 5 6
+// 6 5 5 5 5 5 5 5 5 5 5 5 6
+// 6 6 6 6 6 6 6 6 6 6 6 6 6
+
+public class Pattern {
+  public static void main(String[] args) {
+      int n = 13; // size of the pattern
+      int[][] matrix = new int[n][n];
+
+      // Fill the matrix
+      for (int i = 0; i < n / 2; i++) {
+          for (int j = i; j < n - i; j++) {
+              matrix[i][j] = n / 2 - i;
+              matrix[j][i] = n / 2 - i;
+              matrix[n - i - 1][j] = n / 2 - i;
+              matrix[j][n - i - 1] = n / 2 - i;
+          }
+      }
+
+      // Print the matrix
+      for (int i = 0; i < n; i++) {
+          for (int j = 0; j < n; j++) {
+              System.out.print(matrix[i][j] + " ");
+          }
+          System.out.println();
+      }
+  }
+}
+
+
+
+
+
